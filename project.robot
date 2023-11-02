@@ -22,9 +22,9 @@ LogInToApplication
     Sleep    2sec
     Click Link    xpath://a[@class='s-topbar--item s-topbar--item__unset s-btn s-btn__filled ws-nowrap js-gps-track']
     Sleep    2sec
-    Input Text    id:email    mohanty.subha172086@gmail.com
+    Input Text    id:email    mohanty.subha176@gmail.com
     Sleep    2sec
-    Input Text    id:password    Apple@2456
+    Input Text    id:password    Apple@24789
     Sleep    2sec
     Click Button    xpath://button[@id='submit-button']
     Sleep    2sec
