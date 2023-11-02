@@ -1,0 +1,1 @@
+print("This is my first web scraping using robot framework.")

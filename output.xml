@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20231015 23:26:57.293" rpa="false" schemaversion="4">
+<suite id="s1" name="Data" source="C:\Subha_Data\Pycharm\WEB_SCRAPING\RobotFramework\data.robot">
+<test id="s1-t1" name="LoginTest" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${page_title}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231015 23:26:57.478" level="INFO">Opening browser 'chrome' to base url 'https://stackoverflow.com/'.</msg>
+<status status="PASS" starttime="20231015 23:26:57.478" endtime="20231015 23:27:02.907"/>
+</kw>
+<kw name="LogInToApplication">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231015 23:27:02.908" endtime="20231015 23:27:03.047"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 23:27:05.050" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231015 23:27:03.047" endtime="20231015 23:27:05.051"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='s-topbar--item s-topbar--item__unset s-btn s-btn__filled ws-nowrap js-gps-track']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20231015 23:27:05.053" level="INFO">Clicking link 'xpath://a[@class='s-topbar--item s-topbar--item__unset s-btn s-btn__filled ws-nowrap js-gps-track']'.</msg>
+<status status="PASS" starttime="20231015 23:27:05.051" endtime="20231015 23:27:05.854"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 23:27:07.854" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231015 23:27:05.854" endtime="20231015 23:27:07.854"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:email</arg>
+<arg>mohanty.subha172086@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231015 23:27:07.854" level="INFO">Typing text 'mohanty.subha172086@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20231015 23:27:07.854" endtime="20231015 23:27:08.015"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 23:27:10.016" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231015 23:27:08.015" endtime="20231015 23:27:10.016"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>Apple@2456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231015 23:27:10.016" level="INFO">Typing text 'Apple@2456' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20231015 23:27:10.016" endtime="20231015 23:27:10.105"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 23:27:12.105" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231015 23:27:10.105" endtime="20231015 23:27:12.105"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id='submit-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231015 23:27:12.105" level="INFO">Clicking button 'xpath://button[@id='submit-button']'.</msg>
+<status status="PASS" starttime="20231015 23:27:12.105" endtime="20231015 23:27:12.161"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 23:27:14.162" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231015 23:27:12.161" endtime="20231015 23:27:14.162"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@class="flex--item6 s-btn s-btn__primary js-accept-cookies js-consent-banner-hide"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231015 23:27:14.163" level="INFO">Clicking button 'xpath://button[@class="flex--item6 s-btn s-btn__primary js-accept-cookies js-consent-banner-hide"]'.</msg>
+<status status="PASS" starttime="20231015 23:27:14.162" endtime="20231015 23:27:15.415"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231015 23:27:17.416" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231015 23:27:15.415" endtime="20231015 23:27:17.416"/>
+</kw>
+<status status="PASS" starttime="20231015 23:27:02.908" endtime="20231015 23:27:17.416"/>
+</kw>
+<kw name="CheckingTitle">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${page_title}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231015 23:27:17.416" level="INFO">Opening url 'https://stackoverflow.com/'</msg>
+<status status="PASS" starttime="20231015 23:27:17.416" endtime="20231015 23:27:23.942"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${actual_title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231015 23:27:23.949" level="INFO">${actual_title} = Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</msg>
+<status status="PASS" starttime="20231015 23:27:23.942" endtime="20231015 23:27:23.949"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${expected_title}</var>
+<arg>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231015 23:27:23.949" level="INFO">${expected_title} = Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</msg>
+<status status="PASS" starttime="20231015 23:27:23.949" endtime="20231015 23:27:23.949"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${expected_title}</arg>
+<arg>${actual_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231015 23:27:23.949" endtime="20231015 23:27:23.950"/>
+</kw>
+<status status="PASS" starttime="20231015 23:27:17.416" endtime="20231015 23:27:23.950"/>
+</kw>
+<kw name="CapturePage">
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath://span[@class='-img _glyph']</arg>
+<arg>logo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20231015 23:27:24.060" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logo.png"&gt;&lt;img src="logo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231015 23:27:23.950" endtime="20231015 23:27:24.060"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>screenshot.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231015 23:27:24.349" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot.png"&gt;&lt;img src="screenshot.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231015 23:27:24.060" endtime="20231015 23:27:24.350"/>
+</kw>
+<status status="PASS" starttime="20231015 23:27:23.950" endtime="20231015 23:27:24.350"/>
+</kw>
+<status status="PASS" starttime="20231015 23:26:57.477" endtime="20231015 23:27:24.350"/>
+</test>
+<test id="s1-t2" name="SuccFully Login to your Website" line="16">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231015 23:27:24.352" endtime="20231015 23:27:26.589"/>
+</kw>
+<status status="PASS" starttime="20231015 23:27:24.352" endtime="20231015 23:27:26.590"/>
+</test>
+<status status="PASS" starttime="20231015 23:26:57.295" endtime="20231015 23:27:26.590"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Data">Data</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
